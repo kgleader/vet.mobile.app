@@ -420,7 +420,7 @@ class _HomeScreenState extends State<HomeScreen> {
             // Navigate to profile screen
             ScaffoldMessenger.of(context).showSnackBar(
               const SnackBar(
-                content: Text('Профиль экраны азыр жок'),
+                content: Text('Профиль экраны азырынча жок'),
                 backgroundColor: Colors.green,
               ),
             );
