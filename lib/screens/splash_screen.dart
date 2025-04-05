@@ -12,7 +12,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    
+
     Future.delayed(const Duration(seconds: 2), () {
       if (mounted) {
         Navigator.pushReplacement(
@@ -43,7 +43,11 @@ class _SplashScreenState extends State<SplashScreen> {
                     width: 50,
                     height: 50,
                     errorBuilder: (context, error, stackTrace) {
-                      return const Icon(Icons.pets, size: 40, color: Colors.white);
+                      return const Icon(
+                        Icons.pets,
+                        size: 40,
+                        color: Colors.white,
+                      );
                     },
                   ),
                 ),
@@ -60,10 +64,7 @@ class _SplashScreenState extends State<SplashScreen> {
               const SizedBox(height: 15),
               const Text(
                 "Мал жаныбарларды асыроону биз менен баштаңыз.",
-                style: TextStyle(
-                  fontSize: 16,
-                  color: Colors.black87,
-                ),
+                style: TextStyle(fontSize: 16, color: Colors.black87),
               ),
               const Spacer(),
               Center(
@@ -75,6 +76,7 @@ class _SplashScreenState extends State<SplashScreen> {
                     return Container(
                       height: 250,
                       width: double.infinity,
+                      // ignore: deprecated_member_use
                       color: Colors.green.withOpacity(0.1),
                       child: const Icon(
                         Icons.pets,
